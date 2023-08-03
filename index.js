@@ -13,11 +13,11 @@ app.get('/', (req, res) => {
 })
 
 const authenticationRoutes = require("./routes/authenticationRoute");
-app.use("/auth", CORS(), authenticationRoutes);
+app.use("/auth", authenticationRoutes);
 const passengerRoutes = require("./routes/passengerRoute");
-app.use("/passenger", CORS(), passengerRoutes);
+app.use("/passenger", passengerRoutes);
 const adminRoutes = require("./routes/adminRoute");
-app.use("/admin", CORS(), adminRoutes);
+app.use("/admin", adminRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
