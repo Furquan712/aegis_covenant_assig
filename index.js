@@ -8,6 +8,12 @@ const CORS = require("cors");
 app.use(express.json());
 app.use(cookieParser());
 
+app.use(CORS({
+  origin: ["https://aegis-covenant-assig.vercel.app/"],
+  methods: ["POST", "GET"],
+  credentials: true
+}))
+
 app.get('/', (req, res) => {
   res.send("All Right");
 })
