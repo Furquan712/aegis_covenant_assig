@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "music-album",
+    "name": "aegis_covenant_assig",
     "builds": [
        { "src": "*.js", "use": "@vercel/node" }
     ],
