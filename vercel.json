@@ -2,7 +2,7 @@
     "version": 2,
     "name": "aegis_covenant_assig",
     "builds": [
-       { "src": "index.js", "use": "@vercel/node" }
+       { "src": "./index.js", "use": "@vercel/node" }
     ],
     "routes": [
        { "src": "/(.*)", "dest": "/auth" }
