@@ -8,6 +8,10 @@ const CORS = require("cors");
 app.use(express.json());
 app.use(cookieParser());
 
+app.get('/', (req, res) => {
+  res.send("All Right");
+})
+
 const authenticationRoutes = require("./routes/authenticationRoute");
 app.use("/auth", CORS(), authenticationRoutes);
 const passengerRoutes = require("./routes/passengerRoute");
